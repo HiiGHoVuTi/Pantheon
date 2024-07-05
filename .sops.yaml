@@ -1,0 +1,12 @@
+keys:
+  - &users:
+    - &juliette age1d8fvpr7ks82d7j4etp4wzgwfcqu9rvw02mj66gjtr2k5qkgxj5uqxhn9p8
+  - &hosts:
+    - &gauss age16hze3nj8zrewype393qqyg7kyrkl06mylre4sld59yu3ew4l9yysh9n0mp
+creation_rules:
+  - path_regex: secrets.yaml$
+    key_groups:
+    - age:
+      - *juliette
+      - *gauss
+
