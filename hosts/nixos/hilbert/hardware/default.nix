@@ -22,8 +22,7 @@
 
   # Storage
   fileSystems."/HDD" = {
-    device = "/dev/sda1";
+    device = "/dev/disk/by-uuid/70bae6a8-6461-4787-b97f-b5f2c39564ed";
     fsType = "ext4";
-    options = ["uid=1000,gid=100,forceuid,forcegid,x-systemd.automount,x-systemd.mount-timeout=5s"];
   };
 }
