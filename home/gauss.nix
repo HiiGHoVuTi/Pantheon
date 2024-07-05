@@ -39,6 +39,7 @@
     # }}}
     # {{{ Clis
     sops # Secret editing
+    gitmoji
     # sherlock # Search for usernames across different websites
     # }}}
     # {{{ Misc 
