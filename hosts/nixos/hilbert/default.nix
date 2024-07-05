@@ -12,6 +12,9 @@
     ../common/optional/greetd.nix
     # ../common/optional/services/kanata.nix
 
+    # ./services/forgejo.nix
+    # ./services/vaultwarden.nix
+
     ./hardware
     ./boot.nix
   ];

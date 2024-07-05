@@ -19,4 +19,11 @@
   systemd.targets.suspend.enable = false;
   systemd.targets.hibernate.enable = false;
   systemd.targets.hybrid-sleep.enable = false;
+
+  # Storage
+  fileSystems."/HDD" = {
+    device = "/dev/sda1";
+    fsType = "ext4";
+    options = ["uid=1000,gid=100,forceuid,forcegid,x-systemd.automount,x-systemd.mount-timeout=5s"];
+  };
 }
