@@ -19,10 +19,4 @@
   systemd.targets.suspend.enable = false;
   systemd.targets.hibernate.enable = false;
   systemd.targets.hybrid-sleep.enable = false;
-
-  # Storage
-  fileSystems."/HDD" = {
-    device = "/dev/disk/by-uuid/70bae6a8-6461-4787-b97f-b5f2c39564ed";
-    fsType = "ext4";
-  };
 }
