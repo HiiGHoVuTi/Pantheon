@@ -12,6 +12,8 @@
     # ../common/optional/greetd.nix
     # ../common/optional/services/kanata.nix
 
+    ./services/syncthing.nix 
+
     ./hardware
     ./boot.nix
   ];

@@ -12,6 +12,8 @@
     ../common/optional/greetd.nix
     # ../common/optional/services/kanata.nix
 
+    ./services/syncthing.nix
+
     # ./services/forgejo.nix
     # ./services/vaultwarden.nix
 
