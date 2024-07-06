@@ -1,8 +1,8 @@
 { config, lib, ... }:
-let cfg = config.satellite.nginx;
+let cfg = config.pantheon.nginx;
 in
 {
-  options.satellite.nginx = {
+  options.pantheon.nginx = {
     domain = lib.mkOption {
       description = "Root domain to use as a default for configurations.";
       type = lib.types.str;
@@ -53,8 +53,8 @@ in
         {
           assertion = (config.port == null) == (config.files != null);
           message = ''
-            Precisely one of the options 'satellite.nginx.at.${config.name}.port'
-            and 'satellite.nginx.at.${config.name}.files' must be specified.
+            Precisely one of the options 'pantheon.nginx.at.${config.name}.port'
+            and 'pantheon.nginx.at.${config.name}.files' must be specified.
           '';
         };
       in lib.mapAttrsToList (_: assertSingleTarget) cfg.at;
